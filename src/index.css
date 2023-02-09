@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.float {
+  animation: translating 3s infinite;
+  animation-direction: alternate;
+}
+
+.floatxy {
+  animation: translatingxy 2s infinite;
+  animation-direction: alternate;
+}
+
+#img-w img {
+  max-width: inherit !important;
+}
+
+#img-w2 img {
+  max-width: 100% !important;
+}
+
+@keyframes translating {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, -20px);
+  }
+}
+
+@keyframes translatingxy {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-20px, -20px);
+  }
+}
+
+@font-face {
+  font-family: "MontserratAlt1";
+  src: url("../public/fonts/MontserratAlt1-Regular.otf");
+}
